@@ -39,7 +39,7 @@
 ![header.png](img/header.png)
 
 ```scss
-header.header>nav.header__navigation+a.header__phone
+header.header>(nav.header__navigation.navigation>a.navigation__link*3)+a.header__phone.link>(svg.link__ico+span.link__text)
 ```
 
 
@@ -49,7 +49,7 @@ header.header>nav.header__navigation+a.header__phone
 ![img.png](img/form.png)
 
 ```scss
-form.form>fieldset.form__fieldset>legend.form__legend+input.form__input+input.form__input+button.form__button
+form.form>fieldset.form__fieldset>legend.form__legend+(label.form__label>input.form__input)*2+button.form__button
 ```
 
 ### Card
@@ -57,7 +57,7 @@ form.form>fieldset.form__fieldset>legend.form__legend+input.form__input+input.fo
 ![img.png](img/cards.png)
 
 ```scss
-.card>h3.card__title+p.card__text
+.card>h3.card__title+(ul.card__list>li.card__item.item*4)*2
 ```
 
 ### Footer
@@ -65,5 +65,5 @@ form.form>fieldset.form__fieldset>legend.form__legend+input.form__input+input.fo
 ![img.png](img/footer.png)
 
 ```scss
-footer.footer>(h3.footer__title+ul.footer__contacts>li.footer__link+h4.footer__text)
+footer.footer>(h3.footer__title+(.footer__contacts>(a.footer__contact.contact>svg.contact__ico+p.contact__text)*2+ul.footer__links>li.footer__link.link*3)+p.footer__text)
 ```

@@ -20,13 +20,16 @@
 .arm__hand
 
 .hand
-.hand--clenched
+.hand--clenched // сжатая кисть руки
 
 .legs__leg
 
 .leg
 .leg__knees
 .leg__knee
+
+.knee
+.knee--bent // согнутое колено
 ```
 
 ## Emmet
